@@ -5,31 +5,31 @@ using UnityEngine;
 public class KnifeHot : MonoBehaviour
 {
      
-    public bool Hot = false;
+    public bool hot = false;
     public bool done = false;
-    public Material fire;
-    private MeshRenderer knife;
-    // Start is called before the first frame update
+    public Material hotMaterial;
+    public GameObject knifeBlade;
+
+    private MeshRenderer bladeMeshRenderer;
+
     void Start()
     {
-        knife = GetComponent<MeshRenderer>();
+        bladeMeshRenderer = knifeBlade.GetComponent<MeshRenderer>();
     }
     void Update()
     {
-        if (Hot && !done)
+        if (hot && !done)
         {
-            knife.material = fire;
+            bladeMeshRenderer.material = hotMaterial;
             done = true;
         }
     }
 
     void OnCollisionEnter(Collision collision)
     {
-        if (Hot && collision.collider.gameObject.tag == "destroy")
+        if (hot && collision.collider.gameObject.CompareTag("destroy"))
         {
-            Debug.Log("colliding");
             Destroy(collision.collider.gameObject);
-
         }
 
     }

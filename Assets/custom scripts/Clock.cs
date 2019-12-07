@@ -37,7 +37,7 @@ public class Clock : MonoBehaviour
                 var diff = micropos - knifepos;
                 if (diff.sqrMagnitude < 1)
                 {
-                    knife.GetComponent<KnifeHot>().Hot = true;
+                    knife.GetComponent<KnifeHot>().hot = true;
                 }
 
             }
