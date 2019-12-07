@@ -1798,6 +1798,12 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.7695746, y: 4.755562, z: 0.53200537}
   m_Center: {x: 1.3070118, y: 0.00000011920929, z: 0.07809843}
+--- !u!1 &238983357 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8768130146460850889, guid: bc623bbd2fd29d4448de92c4e551a6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1572011250}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &251383302 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 554580192548320088, guid: 010a6588c7709f6438e8384dbba60c03,
@@ -2397,6 +2403,28 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 605176110}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &625238788 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8768130147274905444, guid: bc623bbd2fd29d4448de92c4e551a6df,
+    type: 3}
+  m_PrefabInstance: {fileID: 1572011250}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &625238791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 625238788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34d411e69880f6d45b034ebdd3f62c2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hot: 1
+  done: 0
+  hotMaterial: {fileID: 2100000, guid: 46b80b0afcaadaa4bb484ecd51dc8eea, type: 2}
+  knifeBlade: {fileID: 238983357}
 --- !u!43 &632130547
 Mesh:
   m_ObjectHideFlags: 0
@@ -6494,7 +6522,13 @@ PrefabInstance:
       propertyPath: Hot
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 8768130146460850882, guid: bc623bbd2fd29d4448de92c4e551a6df,
+        type: 3}
+      propertyPath: hot
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 8768130146460850882, guid: bc623bbd2fd29d4448de92c4e551a6df, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: bc623bbd2fd29d4448de92c4e551a6df, type: 3}
 --- !u!4 &1643113116 stripped
 Transform:
