@@ -1,35 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Leap.Unity.Interaction;
 
 public class KeyBehaviour : MonoBehaviour
 {
     private float minRotation = 250f;
     private float maxRotation = 290f;
-    private bool inFinalPosition = false;
-    private bool attached = false;
+    public bool inFinalRotation;
+    public bool attached;
+    private bool puzzleFinished = false;
     private Rigidbody keyRigidbody;
+    private InteractionBehaviour interactionBehaviour;
+    private AnchorableBehaviour anchorableBehaviour;
 
     private void Start()
     {
+        inFinalRotation = false;
+        attached = false;
         keyRigidbody = GetComponent<Rigidbody>();
+        interactionBehaviour = GetComponent<InteractionBehaviour>();
+        anchorableBehaviour = GetComponent<AnchorableBehaviour>();
     }
 
     private void Update()
     {
-        if (attached)
+        if (!puzzleFinished && attached)
         {
-            if (inFinalPosition)
+            if (inFinalRotation)
             {
+                anchorableBehaviour.anchorRotation = false;
                 transform.eulerAngles = new Vector3(270, 180, 0);
                 keyRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+                puzzleFinished = true;
             } else
             {
                 var rotation = transform.rotation.eulerAngles.x;
 
                 if (rotation >= minRotation && rotation <= maxRotation)
                 {
-                    inFinalPosition = true;
+                    inFinalRotation = true;
+                    interactionBehaviour.ignoreGrasping = true;
                     Debug.Log("Waduhek you win.");
                 }
             }
@@ -38,7 +49,11 @@ public class KeyBehaviour : MonoBehaviour
 
     public void onKeyAttached()
     {
-        attached = true;
-        keyRigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        if (!inFinalRotation)
+        {
+            Debug.Log("key attached");
+            attached = true;
+            keyRigidbody.constraints = RigidbodyConstraints.FreezePosition | RigidbodyConstraints.FreezeRotationY | RigidbodyConstraints.FreezeRotationZ;
+        }
     }
 }
