@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Leap.Unity.Interaction;
 
 public class KeyBehaviour : MonoBehaviour
@@ -41,6 +42,7 @@ public class KeyBehaviour : MonoBehaviour
                 {
                     inFinalRotation = true;
                     interactionBehaviour.ignoreGrasping = true;
+                    SceneManager.LoadScene("FinalScene", LoadSceneMode.Single);
                     Debug.Log("Waduhek you win.");
                 }
             }
