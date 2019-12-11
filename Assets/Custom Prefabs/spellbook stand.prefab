@@ -91,7 +91,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e4b2a11ed477bc43a298b3832a9debf, type: 2}
+  - {fileID: 2100000, guid: 5e775ae87c8c8604c9cb47129c773b9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -183,7 +183,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e4b2a11ed477bc43a298b3832a9debf, type: 2}
+  - {fileID: 2100000, guid: 5e775ae87c8c8604c9cb47129c773b9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -275,7 +275,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e4b2a11ed477bc43a298b3832a9debf, type: 2}
+  - {fileID: 2100000, guid: 5e775ae87c8c8604c9cb47129c773b9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -367,7 +367,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e4b2a11ed477bc43a298b3832a9debf, type: 2}
+  - {fileID: 2100000, guid: 5e775ae87c8c8604c9cb47129c773b9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -459,7 +459,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 5e4b2a11ed477bc43a298b3832a9debf, type: 2}
+  - {fileID: 2100000, guid: 5e775ae87c8c8604c9cb47129c773b9d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -503,7 +503,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4648332201857886991}
   m_Layer: 0
-  m_Name: Spellbook stand
+  m_Name: spellbook stand
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -640,6 +640,26 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 1.0000006
       objectReference: {fileID: 0}
+    - target: {fileID: 2380201654990610546, guid: f3a83df72db294748b71e7bb18dabd55,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.x
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380201654990610546, guid: f3a83df72db294748b71e7bb18dabd55,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.y
+      value: -0.50000995
+      objectReference: {fileID: 0}
+    - target: {fileID: 2380201654990610546, guid: f3a83df72db294748b71e7bb18dabd55,
+        type: 3}
+      propertyPath: m_ConnectedAnchor.z
+      value: -0.5000001
+      objectReference: {fileID: 0}
+    - target: {fileID: 5975055545010324672, guid: f3a83df72db294748b71e7bb18dabd55,
+        type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5975055545010324677, guid: f3a83df72db294748b71e7bb18dabd55,
         type: 3}
       propertyPath: m_textInfo.characterCount
@@ -664,11 +684,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_textInfo.pageCount
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5975055545010324672, guid: f3a83df72db294748b71e7bb18dabd55,
-        type: 3}
-      propertyPath: m_Mesh
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f3a83df72db294748b71e7bb18dabd55, type: 3}
