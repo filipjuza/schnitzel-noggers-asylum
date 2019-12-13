@@ -1,7 +1,7 @@
 # Schnitzel-Noggers Asylum Escape Room
 **XR project, XR Development 2, fall 2019**
 
-The purpose of the project is to create a VR escape room with a series of puzzles. The project will utilise hand tracking and require the player to use hand gestures and movements.
+The purpose of the project is to create a VR escape room with a series of puzzles. The project utilises hand tracking and require the player to use hand gestures and movements.
 
 ## Puzzles
 * A lockbox containing the literal key to escape. The lockbox will feature a locking mechanism and might require solving the secondary puzzles to open.
