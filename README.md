@@ -1,3 +1,5 @@
+# The project has been moved to https://github.com/filipjuza/schnitzel-noggers-asylum-2 due to issues with LFS quota.
+
 # Schnitzel-Noggers Asylum Escape Room
 **XR project, XR Development 2, fall 2019**
 
